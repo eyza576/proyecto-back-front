@@ -1,0 +1,19 @@
+<div class="card bg-light">
+    <h3 class="text-center">Edición de Categorias</h3>
+    <div class="card-body">
+    <form (ngSubmit)= "onSubmit()" #categoriaForm = "ngForm">
+     
+        <div class="row mb-3">
+          <label for="nombre" class="col-sm-2 col-form-label">NOMBRES</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" placeholder="Ingrese nombre del categoria" [(ngModel)]="categoria.nombre" name="nombre" />
+          </div>
+        </div>
+<div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <button class="btn btn-primary me-md-2" type="button" [routerLink]="['/categoria']">Cancelar</button>
+           
+            <button role="button"><i class="fa fa-floppy-o" aria-hidden="true">Guardar</i></button>
+          </div>
+      </form>
+    </div>
+  </div>

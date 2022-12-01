@@ -1,0 +1,33 @@
+<div class="card">
+    <div class="card-header">
+      Lista de Productos</div>
+    <div class="card-body">
+      <caption>
+       
+      </caption>
+      <table class="table caption-top">
+        
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">CODIGO</th>
+            <th scope="col">NOMBRE</th>
+            <th scope="col">PRECIO</th>
+            <th scope="col">CANTIDAD</th>
+            <th scope="col">STOCK</th>
+            
+
+          </tr>
+        </thead>
+<tbody>
+          <tr *ngFor= "let productos of producto">
+            <td>{{productos.idproducto}}</td>
+            <td>{{productos.nombre}}</td> 
+            <td>{{productos.precio}}</td> 
+            <td>{{productos.cantidad}}</td> 
+            <td>{{productos.stock}}</td> 
+            
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
